@@ -12,11 +12,11 @@ Defined using:
 
 ``section .[section_name]``
 
-**text:**
+**text**
 
 This section is the one where code lives
 
-**data:**
+**data**
 
 Constant data definitions
 
@@ -27,13 +27,14 @@ Reserve memory for usage in the program
 # syscall 
 -  refrence.
 You can find all the syscalls for macOS in 
+
 ``/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/sys/syscall.h ``
 
 - All syscalls must be prefixed with ``0x0200000``
 
 - Syscall number must be moved into ``rax`` register
 
-- basic 
+- basic syscalls
   1. Exit - `1`
   2. Print - `4`
   3. Read - `3`

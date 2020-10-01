@@ -7,7 +7,7 @@
 
 ## Haskell
 ## hls: Http Live Streaming server
-### TDOD:
+### TODO:
 - Automatically generate m3u8 files.
 - Use ffmpeg to create mpeg2ts files
 
@@ -16,5 +16,8 @@
 - Setup proper rendering using opengl
 - Start terminal process
 
-## Compilers and Operatino Systems
-### Cranelift: Study it architecture
+# Compilers and Operatino Systems
+## Cranelift: Example Compiler
+### TODO:
+- Study it architecture
+

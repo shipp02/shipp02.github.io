@@ -1,1 +1,1 @@
-# I am in Hong Kong
+# [Current projects](https://shipp02.github.io/current_projects)

@@ -1,5 +1,10 @@
 # Game using opengl
 - Snake game
+- Working on it
+- Creating abstraction over OpenGL in C++
+
+# Play with [``libui``](https://github.com/andlabs/libui)
+- Contribute possibly
 
 # GPU database operations
 - compute shaders

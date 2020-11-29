@@ -38,8 +38,10 @@ Basically custom language extension point
 - Setup proper rendering using opengl
 - Start terminal process
 
-# Compilers and Operatino Systems
-## Cranelift: Example Compiler
+# Compilers and Operating Systems
+## [``Cranelift``](https://github.com/bytecodealliance/wasmtime/tree/main/cranelift): Example Compiler
 ### TODO:
 - Study it architecture
+
+[``OSDev``](https://wiki.osdev.org/)
 

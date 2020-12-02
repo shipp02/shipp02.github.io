@@ -5,6 +5,12 @@
 
 # Play with [``libui``](https://github.com/andlabs/libui)
 - Contribute possibly
+- Add support for RPC based UI creation
+
+# Ideas
+## Directly support Object Mapping in Driver using Jackson
+- Driver recieves message in binary
+- Write parser for Jackson which will parse this binary straight to objects
 
 # GPU database operations
 - compute shaders

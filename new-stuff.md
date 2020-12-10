@@ -3,7 +3,7 @@
 - Working on it
 - Creating abstraction over OpenGL in C++
 
-# Translate [``stb_truetype``] to haskell.
+# Translate ``stb_truetype`` to haskell.
 - Learn about parsers
 - Also add ``RWST`` Monad
 - Binary file parsing

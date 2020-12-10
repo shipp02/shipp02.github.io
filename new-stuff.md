@@ -3,6 +3,11 @@
 - Working on it
 - Creating abstraction over OpenGL in C++
 
+# Translate [``stb_truetype``] to haskell.
+- Learn about parsers
+- Also add ``RWST`` Monad
+- Binary file parsing
+
 # Play with [``libui``](https://github.com/andlabs/libui)
 - Contribute possibly
 - Add support for RPC based UI creation

@@ -1,3 +1,15 @@
+``18 December, 2020``
+
+## Snake game in ``C++`` using ``OpenGL``
+
+## Haskell truetype font parser
+
+## Following along with [``Let's build a compiler``](https://compilers.iecc.com/crenshaw/tutorfinal.pdf) in Golang
+
+**Learn about Functional Programming Monads, Lenses**
+
+----
+
 ## Want to contribute to kotlin-language-server
 **Auto Completion for Global symbols #10**
 - Create cache of all symbols sorted.

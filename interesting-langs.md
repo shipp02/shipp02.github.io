@@ -1,3 +1,7 @@
+# [Futhark](https://futhark-lang.org/getinvolved.html)
+- High performance numerical compute on GPU and CPU
+- Better than Fortran for Compute performance
+
 #  D
 - Fast
 - C like syntax

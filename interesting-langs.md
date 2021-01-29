@@ -5,6 +5,10 @@
 - High performance numerical compute on GPU and CPU
 - Better than Fortran for Compute performance
 
+# Pony lang
+- Actor based
+- Focussed on concurrency
+
 #  D
 - Fast
 - C like syntax

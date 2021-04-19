@@ -1,3 +1,11 @@
+# [Vala](https://wiki.gnome.org/Projects/Vala)
+- Used by GNOME, Elementary OS
+- Simmilar guarantees to Rust
+
+# [Vale](https://vale.dev)
+- It is like rust but has fast GC.
+
+
 # [Luna](https://www.luna-lang.org/)
 - Data visualization
 
@@ -29,7 +37,7 @@
 # Rust
 - Large community
 - Installed
--  Memory safe
+- Memory safe
 
 # Dart
 - Google supported. Used in adsense and adwords by Google

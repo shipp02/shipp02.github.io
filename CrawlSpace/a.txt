@@ -1,2 +1,3 @@
 How are you today?
 REF c.txt
+REF dir_test/f.txt

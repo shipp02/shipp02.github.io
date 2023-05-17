@@ -1,3 +1,0 @@
-REF d.txt
-More text
-REF a.txt

@@ -1,4 +1,0 @@
-This is some text
-REF a.txt
-REF b.txt
-This is some more text

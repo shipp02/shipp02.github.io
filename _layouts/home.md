@@ -20,12 +20,14 @@ layout: default
 <div class="multipurpose-container home-heading-container">
   <div class="home-heading" {{ home_img_background_style }}>
     {{ home_img_tag }}
-    <div class="home-heading-message">
-      Software, Electronics
-        <br>
+    <!-- <div class="home-heading-message">
+      Software, 
+      <br>
+      Electronics
+      <br>
       and interfacing with real systems
 
-    </div>
+    </div> -->
   </div>
   <div class="home-intro-text markdown-style">
     {{ content }}

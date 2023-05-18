@@ -25,17 +25,17 @@ layout: default
 {%- endif %}
   <h1 {{ color_style }}>{{ project_data.main.header | default: "Projects" }}</h1>
   <p {{ color_style }}>{{ project_data.main.info | default: "No data, check page_data in [language]/tabs/projects.md front matter or _data/content/projects/[language].yml" }}</p>
-  <div class="multipurpose-button-wrapper">
+  <!-- <div class="multipurpose-button-wrapper">
   {% for category in project_data.category %}
     <a href="#{{ category.type }}" role="button" class="multipurpose-button project-buttons" style="background-color:{{ category.color }};">{{ category.title }}</a>
   {% endfor %}
-  </div>
+  </div> -->
 </div>
 
-{% for category in project_data.category -%}
-  {%- capture first_category_id -%} id="{{ category.type }}" {%-endcapture-%}
+<!-- {% for category in project_data.category -%} -->
+  <!-- {%- capture first_category_id -%} id="{{ category.type }}" {%-endcapture-%} -->
   {% for list in project_data.list -%}
-    {%- if list.type != category.type %}{% continue %}{% endif -%}
+    <!-- {%- if list.type != category.type %}{% continue %}{% endif -%} -->
     <div class="multipurpose-container project-container" {{ first_category_id }}>
       {%-assign first_category_id=nil -%}
       {%- include multi_lng/get-localized-long-date-format.liquid date = list.date -%}
@@ -56,7 +56,7 @@ layout: default
           <h1>{{ list.project_name }}</h1><h4>{{ list.project_excerpt }}</h4>
           <div class="meta-container">
             <p class="date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;{{ list.date | date: out_date_format }}</p>
-            <p class="category">#{{ category.title }}</p>
+            <!-- <p class="category">#{{ category.title }}</p> -->
           </div>
           <hr>
           <a href="javascript:void(0);" class="read-more-less">
@@ -75,4 +75,4 @@ layout: default
       </div>
     </div>
   {%- endfor %}
-{%- endfor %}
+<!-- {%- endfor %} -->

@@ -16,7 +16,8 @@ tags: [jekyll, example post]
 comments_disable: true
 
 # publish date
-date: 2021-09-13 14:47:12 +0900
+# date: 2021-09-13 14:47:12 +0900
+published: false
 
 # seo
 # if not specified, date will be used.

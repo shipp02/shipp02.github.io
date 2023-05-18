@@ -16,7 +16,8 @@ img: ":post_pic2.jpg"
 comments_disable: true
 
 # publish date
-date: 2021-10-14 18:47:35 +0900
+# date: 2021-10-14 18:47:35 +0900
+published: false
 
 # seo
 # if not specified, date will be used.

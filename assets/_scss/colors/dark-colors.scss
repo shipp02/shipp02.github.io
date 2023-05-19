@@ -9,7 +9,7 @@
 // dark color scheme definitions
 $brand-color-dark: #71b2ff;
 $main-background-dark: #191919;
-$button-color-dark: #666;
+$button-color-dark: #b0b0d5;
 $menu-background-dark: #252525;
 $header-color-dark: #c0c0c0;
 $container-background-dark: #2a2a2a;
@@ -75,8 +75,8 @@ $anchor-text-color-dark: #3389de;
 // default/nav/navigation-buttons
 %navigation-buttons-colors-dark {
   --side-top-nav-buttons-text-color: #{$button-color-dark};
-  --side-top-nav-buttons-hover-text-color: #cbcfcf;
-  --side-top-nav-buttons-active-text-color: #cbcfcf;
+  --side-top-nav-buttons-hover-text-color: #b5b5ff;
+  --side-top-nav-buttons-active-text-color: #b5b5ff;
 }
 // default/nav/navigation
 %navigation-colors-dark {

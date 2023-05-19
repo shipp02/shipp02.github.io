@@ -349,9 +349,9 @@ sensors to protect from human errors.</p>
           <img src="/assets/img/default/1x1px.png" alt="">
         </div>
         <div class="col-md-9 project-header">
-          <h1>Grafana Clone</h1><h4></h4>
+          <h1>Grafana Clone</h1><h4>A graphing system inspired by grafana which is incremental by default and can provide online analysis of real-time data.</h4>
           <div class="meta-container">
-            <p class="date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;</p>
+            <p class="date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;May 19, 2023</p>
             <!-- <p class="category">#Example</p> -->
           </div>
           <hr>
@@ -363,7 +363,15 @@ sensors to protect from human errors.</p>
       </div>
       <div class="row">
         <div class="markdown-style">
-          
+          <p>This utilizes a Svelte based frontend and a Go backend in order to create a graph from given 
+sensor data. Currently this is in development and hence only support postgresql as a data source.
+Additionally, I only have Linear Regression implemented for online analysis of the data.</p>
+
+<p>The system works by pushing new data to the client using websockets. It implements ping/ping pattern
+in order to make sure that the client has a live connection to the server and that the server is still
+present. Furhter, it has reconnection and exponential backoff based retries built into the system in
+order to make sure network is not overloaded if the server is currently not accessible. This also makes
+sure that we get live data back as soon as a connection to the server is possible.</p>
 
           <a href="javascript:void(0);" class="read-more-less">
             <i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i>Read less

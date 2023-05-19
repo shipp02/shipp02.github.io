@@ -136,6 +136,19 @@ page_data:
 
     - type: id_example
       project_name: Grafana Clone
+      project_excerpt: A graphing system inspired by grafana which is incremental by default and can provide online analysis of real-time data.
+      img_title: "Photo of the whole application"
+      date: "2023-05-19"
+      post: |
+        This utilizes a Svelte based frontend and a Go backend in order to create a graph from given 
+        sensor data. Currently this is in development and hence only support postgresql as a data source.
+        Additionally, I only have Linear Regression implemented for online analysis of the data. 
+
+        The system works by pushing new data to the client using websockets. It implements ping/ping pattern
+        in order to make sure that the client has a live connection to the server and that the server is still
+        present. Furhter, it has reconnection and exponential backoff based retries built into the system in
+        order to make sure network is not overloaded if the server is currently not accessible. This also makes
+        sure that we get live data back as soon as a connection to the server is possible.
       
 
 

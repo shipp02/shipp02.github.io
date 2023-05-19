@@ -32,147 +32,69 @@ page_data:
       # formatting is yyyy/mm/dd
       date: "2023-05-18"
       post: |
-        # Examples
+        # Components
+        - Grafana
+        - PostgreSQL
+        - Docker
+        - Python data gathering scripts on Debian
+        - Custom grafana Panel Plugins to visualize flight data
 
-        This is an example page to display markdown related styles for Mr. Green Jekyll Theme.
+        # Context and Benefits 
 
-        ### Headings (centered)
-        {:data-align="center"}
+        This project was started after our python and LabView based systems were found
+        to be insufficiently flexible for our needs with the in-flight engine control 
+        hardware that was being developed. The in-flight engine controller required our 
+        frontend visualization systems to be more adaptable as it evolved
+        into its final configuration.
 
-        # Heading 1
+        The grafana based solution provided a visual editor which allowed quick edits to data
+        sources and graphs as sensors were added and removed from the system. It allowed for faster
+        component failure detection as well. This suited us quite well.
 
-        ## Heading 2
+        The usage of PostgreSQL was mostly due to familiarity. It was later found as we approached 
+        the launch date that PostgreSQL was not the best choice but the performance was found to be
+        acceptable with some tuning. So through intertia we stuck with it. We plan to switch to a 
+        more appropriate time series database i.e., InfluxDB on the next testing and flight system.
 
-        ### Heading 3
+        We used docker since one of the other problems encountered witht heold system was the inability 
+        to run it reliably acorss different people computer's. The old codebase was worked on by many
+        members on a shared test computer with changes made as required. This resulted in machine specific
+        dependenices and quirks. Thie docker based system allowed us to rely on us being able to bring
+        up a working data accquistion and visualization on any device that had docker insntalled which
+        allowed for faster development.
 
-        #### Heading 4
+        # The Big Day
 
-        ##### Heading 5
+        The most critical day for this system was obviously on the day of the launch of the rocket. On this day, 
+        this sytem ws run for over 10 hours in the sweltering heat of the Mojave desert and was found to be reliable
+        for all of it. The system was up and running immediately once the hardware was on the network unlike our previous
+        systems which would require fiddling around and full restarts of the our test computer if any wires were moved.
 
-        ###### Heading 6
+        There was a undiagnosed failure enar the end which stopped updating the UI. This was worked aroundn by running 
+        the system on different computer. We suspect a hardware fault in the computer since the other computer was
+        immediately stable without any issues. This showed the benefits of the docker based approach as it allowed us to
+        migrate to a seprate machine when the primary system failed on us.
 
-        ***
+        # Roadmap
 
-        ### Paragraphs
+        As mentioned we will be switching to InfluxDB since it is a far more appropriate system for our application. 
+        There is also a Telegraf which is a agent that complements InfluxDB which is under consideration. The usage of
+        InfluxDB will provide us with better time series capabilities in our database providing window based averaging 
+        and other processsing in the database so we can avoid visualizing thousands of data points.
 
-        #### Paragraph
-
-        **William Shakespeare**, Let me not to the marriage of true minds
-        Admit impediments. Love is not love
-        Which alters when it alteration finds,
-        Or bends with the remover to remove.
-        O no, it is an ever-fixed mark
-        That looks on tempests and is never shaken;
-        It is the star to every wand'ring barque,
-        Whose worth's unknown, although his height be taken.
-        Love's not Time's fool, though rosy lips and cheeks
-        Within his bending sickle's compass come;
-        Love alters not with his brief hours and weeks,
-        But bears it out even to the edge of doom.
-        If this be error and upon me proved,
-        I never writ, nor no man ever loved.
-
-        #### Texts
-
-        Quoted text `Hello world`
-
-        Bold text **Hello world**
-
-        Italic text _Hello world_
-
-        kbd text <kbd>Hello world</kbd>
-
-        #### Blockquote
-
-        > **William Shakespeare**, Let me not to the marriage of true minds
-        Admit impediments. Love is not love
-        Which alters when it alteration finds,
-        Or bends with the remover to remove.
-        O no, it is an ever-fixed mark
-        That looks on tempests and is never shaken;
-        It is the star to every wand'ring barque,
-        Whose worth's unknown, although his height be taken.
-        Love's not Time's fool, though rosy lips and cheeks
-        Within his bending sickle's compass come;
-        Love alters not with his brief hours and weeks,
-        But bears it out even to the edge of doom.
-        If this be error and upon me proved,
-        I never writ, nor no man ever loved.
-
-        ### Link
-
-        This is [Mr. Green Jekyll Theme](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme), a simple theme built for [Jekyll](https://jekyllrb.com/).
-
-        ### Picture
-
-        ![such a lovely place](:projects-heading.jpg)
-
-        ### Picture (centered)
-
-        ![such a lovely place](:project1_thumb.jpg){:data-align="center"}
-
-        ### Lists
-
-        - Apple
-        - Banana
-        - Orange
-
-        1. Fruits
-            1. Apples
-                - Granny Smith
-                - Mutsu
-            1. Bananas
-                - Cavendish
-                - Red
-        1. Vegetables
-
-        ***
-
-        ### Tables
-
-        #### Small Table (centered)
-
-        | Fruits(not aligned) | Alignment (centered) | num (right align) |
-        | ------------------- | :------------------: | ----------------: |
-        | Apple               |       centered       |              9999 |
-        | Banana              |  centered long text  |               999 |
-        | Orange              |       centered       |                99 |
-        | Lemon               |       centered       |                 9 |
-        {:data-align="center"}
-
-        #### Wide Table (centered)
-
-        scroll enabled when page is narrow
-
-        | Fruits | num (left align) | num (right align) | num  | num  | num  |
-        | ------ | :--------------- | ----------------: | ---- | ---- | ---- |
-        | Apple  | 1111             |              1111 | 2222 | 3333 | 4444 |
-        | Banana | 111              |               111 | 222  | 333  | 444  |
-        | Orange | 11               |                11 | 22   | 33   | 44   |
-        | Lemon  | 1                |                 1 | 2    | 3    | 4    |
-        {:data-align="center"}
-
-        #### Wider Table
-
-        scroll enabled when page is narrow
-
-        | Fruits | num (left align) | num (right align) | num  | num  | num  | num  | num  | num  |
-        | ------ | :--------------- | ----------------: | ---- | ---- | ---- | ---- | ---- | ---- |
-        | Apple  | 1111             |              1111 | 2222 | 3333 | 4444 | 5555 | 6666 | 7777 |
-        | Banana | 111              |               111 | 222  | 333  | 444  | 555  | 666  | 777  |
-        | Orange | 11               |                11 | 22   | 33   | 44   | 55   | 66   | 77   |
-        | Lemon  | 1                |                 1 | 2    | 3    | 4    | 5    | 6    | 7    |
-
-        ### Code
-
-        #### Quote
-
-        ```python
-        for i in range(5, 10):
-          print(i)
-        ```
+        The Telegraf system is for a live count of system conditions. It provides a push based feed to the grafana 
+        frontend over websocket. It will also act as the agent the collects information from the engine control systems
+        and feed them to the database.
 
     # picture
+    - type: id_example
+      project_name: "PTR Engine Control System"
+      project_excerpt: "In-Flight Engine Control System for UCI Rocket Project's Preliminary Test Rocket"
+      img: ":ECU.jpg"
+      img_title: "ECU-1.5 Orion"
+      date: "2023-05-18"
+      post: |
+      
     - type: id_picture
       project_name: "Example Project"
       project_excerpt: "Picture"

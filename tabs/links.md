@@ -63,19 +63,23 @@ page_data:
     - type: id_orgs
       title: "UCI Rocket Project - Liquids"
       url: "https://www.rocket.eng.uci.edu/team-formation-2021-2022/"
-      info: "The University of California, Irvine Rocket Project - Liquids team launched"
+      info: "We launched a bi-propellant liquid fuel rocket that went up to 9300ft. Our aim is to push the boundaries of collegiate rocketry"
     - type: id_orgs
       title: "IEEE @UCI"
       url: "https://www.instagram.com/ieee_uci/"
-      info: ""
+      info: "I was part of the Micrmouse Project which designed and built a roboot capable of autonomously solving a maze at high speeds."
     - type: id_orgs
       title: "Henry Samueli School of Engineering"
       url: "https://engineering.uci.edu/"
-      info: ""
+      info: "I am a student in the EECS department currently pursuing a degree in Computer Science and Engineering."
 
     - type: id_personal
       title: "Resume"
-      url: ""
-      info: ""
+      url: "/assets/resume.pdf"
+      info: "This is my resume."
+    - type: id_personal
+      title: "Portfolio Website"
+      url: "https://shipp02.github.io"
+      info: "You are here right now. Don't get stuck in a recursive loop."
 
 ---

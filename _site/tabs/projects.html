@@ -248,26 +248,29 @@ allowed for faster development.</p>
 
 <h1 id="the-big-day">The Big Day</h1>
 
-<p>The most critical day for this system was obviously on the day of the launch of the rocket. On this day, 
-this sytem ws run for over 10 hours in the sweltering heat of the Mojave desert and was found to be reliable
-for all of it. The system was up and running immediately once the hardware was on the network unlike our previous
-systems which would require fiddling around and full restarts of the our test computer if any wires were moved.</p>
+<p>The most critical day for this system was obviously on the day of the launch of the rocket. 
+On this day, this sytem ws run for over 10 hours in the sweltering heat of the Mojave desert
+and was found to be reliable for all of it. The system was up and running immediately once 
+the hardware was on the network unlike our previous systems which would require fiddling around
+ and full restarts of the our test computer if any wires were moved.</p>
 
-<p>There was a undiagnosed failure enar the end which stopped updating the UI. This was worked aroundn by running 
-the system on different computer. We suspect a hardware fault in the computer since the other computer was
-immediately stable without any issues. This showed the benefits of the docker based approach as it allowed us to
-migrate to a seprate machine when the primary system failed on us.</p>
+<p>There was a undiagnosed failure enar the end which stopped updating the UI. This was worked 
+around by running the system on different computer. We suspect a hardware fault in the computer 
+since the other computer was immediately stable without any issues. This showed the benefits of 
+the docker based approach as it allowed us tomigrate to a seprate machine when the primary system 
+failed on us.</p>
 
 <h1 id="roadmap">Roadmap</h1>
 
-<p>As mentioned we will be switching to InfluxDB since it is a far more appropriate system for our application. 
-There is also a Telegraf which is a agent that complements InfluxDB which is under consideration. The usage of
-InfluxDB will provide us with better time series capabilities in our database providing window based averaging 
-and other processsing in the database so we can avoid visualizing thousands of data points.</p>
+<p>As mentioned we will be switching to InfluxDB since it is a far more appropriate system for our
+application. There is also a Telegraf which is a agent that complements InfluxDB which is under 
+consideration. The usage of InfluxDB will provide us with better time series capabilities in our
+database providing window based averaging and other processsing in the database so we can avoid 
+visualizing thousands of data points.</p>
 
-<p>The Telegraf system is for a live count of system conditions. It provides a push based feed to the grafana 
-frontend over websocket. It will also act as the agent the collects information from the engine control systems
-and feed them to the database.</p>
+<p>The Telegraf system is for a live count of system conditions. It provides a push based feed to 
+the grafana frontend over websocket. It will also act as the agent the collects information from 
+the engine control systemsand feed them to the database.</p>
 
           <a href="javascript:void(0);" class="read-more-less">
             <i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i>Read less

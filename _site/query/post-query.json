@@ -1,2 +1,16 @@
-
+[
+    {
+    "title"     : "Examples"
+    ,"title_sub": "This is an example page to display markdown related styles for Mr. Green Jekyll Theme."
+    ,"category" : "jekyll"
+    ,"tags"     : "jekyll, sample, example post"
+    ,"url"      : "/posts/2022-02-10-Examples"
+    ,"image"    : "/assets/img/posts/post_pic1.jpg"
+    ,"max_width": ""
+    ,"display"  : ""
+    ,"read_time": "3 min read"
+    ,"date"     : "Feb 9, 2022"
+    ,"year"     : "2022"
+    }
+  ]
 

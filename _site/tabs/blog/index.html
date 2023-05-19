@@ -177,13 +177,28 @@
   <div class="upside-down-tabs">
     <div class="tab-content">
       <div id="tab1" class="tab-pane link-buttons">
-        <ul class="nav nav-pills"></ul>
+        <ul class="nav nav-pills">
+  <li>
+    <a href="javascript:void(0);" data-query-link onclick="PostQuery.runQuery('category','jekyll');" class="hover-effect"><i class="fa-fw fa fa-folder-o" aria-hidden="true"></i>Jekyll</a>
+  </li></ul>
       </div>
       <div id="tab2" class="tab-pane link-buttons">
-        <ul class="nav nav-pills"></ul>
+        <ul class="nav nav-pills">
+  <li>
+    <a href="javascript:void(0);" data-query-link onclick="PostQuery.runQuery('tags','jekyll');" class="hover-effect"><i class="fa-fw fa fa-tag" aria-hidden="true"></i>Jekyll</a>
+  </li>
+  <li>
+    <a href="javascript:void(0);" data-query-link onclick="PostQuery.runQuery('tags','sample');" class="hover-effect"><i class="fa-fw fa fa-tag" aria-hidden="true"></i>Sample</a>
+  </li>
+  <li>
+    <a href="javascript:void(0);" data-query-link onclick="PostQuery.runQuery('tags','example post');" class="hover-effect"><i class="fa-fw fa fa-tag" aria-hidden="true"></i>Example post</a>
+  </li></ul>
       </div>
       <div id="tab3" class="tab-pane link-buttons">
-        <ul class="nav nav-pills"></ul>
+        <ul class="nav nav-pills">
+  <li>
+    <a href="javascript:void(0);" data-query-link onclick="PostQuery.runQuery('year','2022');" class="hover-effect"><i class="fa-fw fa fa-calendar-o" aria-hidden="true"></i>2022</a>
+  </li></ul>
       </div>
       </div>
     <ul class="nav nav-tabs">
@@ -198,6 +213,22 @@
 </div>
 <div class="post-list-header"></div>
 <div class="post-list-container">
+  <div class="thumbnails" >
+  <a href="/posts/2022-02-10-Examples"></a>
+  <div class="image-holder" style="background-image:url('/assets/img/posts/post_pic1.jpg');"></div>
+  <div class="excerpt-holder" >
+    <div class="post-title">Examples</div>
+    <p>This is an example page to display markdown related styles for Mr. Green Jekyll Theme.</p><div class="meta">
+  <small>
+    &nbsp;<i class="fa fa-calendar"></i>&nbsp;&nbsp;Feb 9, 2022
+  </small>
+  <small>
+    &nbsp;&nbsp;&nbsp;<span><i class="fa fa-clock-o"></i>&nbsp;3 min read</span>
+  </small>
+  </div>
+</div>
+</div>
+
   </div>
     <div class="pagination_wrapper">
   <nav aria-label="Page navigation">
@@ -268,11 +299,7 @@
       /* scroll_to_load opt, approx. thumb height to calculate how many can be loaded on screen */
       ,thumb_height: 140
       ,paginator_post_per_page: 5
-    });
-    $(window).bind('post-query-ready', function() {
-      PostQuery.showAll();
-    });
-  </script>
+    });</script>
 
 
 

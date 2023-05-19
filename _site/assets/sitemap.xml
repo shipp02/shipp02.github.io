@@ -6,6 +6,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 xmlns:xhtml="http://www.w3.org/1999/xhtml"
 xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>http://0.0.0.0:4000/posts/2022-02-10-Examples</loc>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic1.jpg</image:loc>
+      <image:title>Examples</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>http://0.0.0.0:4000/tabs/about.html</loc>
   </url>
   <url>

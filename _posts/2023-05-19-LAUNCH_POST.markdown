@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: id_Examples
-title: WE launched a rocket
+title: We launched a rocket
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
@@ -37,7 +37,7 @@ img: "/assets/img/projects/Engine2.jpg"
 # exclude from search engines
 #search_engine_exclude: true
 # to disable this page, simply set published: false or delete this file
-published: false
+# published: false
 ---
 
 After 6 years of hardwork from the UCI Rocket Project team and a year of my own
@@ -50,14 +50,14 @@ The Avionics Systems on this rocket were the Engine Controller, the Avionics Fli
 and a transmitter module for live telemetry. These were developed by us in-house.
 The parachutes deployment system was a commercial EasyMiniv3 system from Altus Metrum.
 
-My primary role was the developmet of the software portion of the Engine Control system. This included the
+My primary role was the developmet of the software for the control of the engine. This included the
 grafana data analysis system that I deployed. We also has a P&ID control diagram to help
-visualize the status of the rocket. I also developed the software for the Engine Control Unit
-which involved embedded programming on a teensy4.1 board. This accepted commands over a IP based 
+visualize the status of the rocket. I also developed the software for the Engine Control Unit (ECU)
+which involved embedded programming on a teensy4.1 board. The ECU accepted commands over a IP based 
 network which made it very convinient during development. I also helped make the builds of the 
 software more robust through the use of platformio which helped people collborate with each other.
-
-All the embedded software that our project used was built using platformio.
+s
+With that technical stuff out of the way, let me express my gratitude to our leads and management for their efforts to the project. I would like to acknowledge our chief engineer in particular for driving me to grow as an engineer and a diplomatic team member. I am aware of several shortcomings in the way I approach my work. He gave me a reality check and set me on the path to progress because I had put off working on issues. This has benefited me in a few personal projects and allowed me to push through obstacles that might have otherwise caused me to quit.
 
 ![Full Team Photo](/assets/img/projects/LaunchTeamPicFinal.jpg)
 

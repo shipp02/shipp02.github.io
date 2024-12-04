@@ -40,27 +40,33 @@ img: "/assets/img/projects/Engine2.jpg"
 # published: false
 ---
 
-After 6 years of hardwork from the UCI Rocket Project team and a year of my own
-involvement in the project, we launched PTR our Prelimiary Test Rocket. This was quite the milestone 
-since it is UCI's first liquid fuel bi-propellant rocket. We got to a maximum altitude of
-9300ft. After our successful hotfire of the rocket engine in flight configuration in January
-2023, we pulled the system together in just 3 months.
+# PTR's first flight
 
-The Avionics Systems on this rocket were the Engine Controller, the Avionics Flight System
-and a transmitter module for live telemetry. These were developed by us in-house.
-The parachutes deployment system was a commercial EasyMiniv3 system from Altus Metrum.
+After six years of dedicated effort from the UCI Rocket Project team, we launched PTR, our Preliminary Test Rocket. PTR is UCI's first liquid-fuel bi-propellant rocket and huge milestone for our project. We conducted a successful hotfire of the rocket engine in January 2022. In 3 months, we integrated our systems and launched the rocket. It reached an altitude of 9,300 ft.
 
-My primary role was the developmet of the software for the control of the engine. This included the
-grafana data analysis system that I deployed. We also has a P&ID control diagram to help
-visualize the status of the rocket. I also developed the software for the Engine Control Unit (ECU)
-which involved embedded programming on a teensy4.1 board. The ECU accepted commands over a IP based 
-network which made it very convinient during development. I also helped make the builds of the 
-software more robust through the use of platformio which helped people collborate with each other.
-s
-With that technical stuff out of the way, let me express my gratitude to our leads and management for their efforts to the project. I would like to acknowledge our chief engineer in particular for driving me to grow as an engineer and a diplomatic team member. I am aware of several shortcomings in the way I approach my work. He gave me a reality check and set me on the path to progress because I had put off working on issues. This has benefited me in a few personal projects and allowed me to push through obstacles that might have otherwise caused me to quit.
+# My role in the avionics.
+
+We developed the Engine Control Unit (ECU), and the Avionics Flight System (AFS). The AFS included a radio system for live telemetry. An EasyMiniv3 system from Altus Metrum was used to deploy the parachutes.
+
+I have involved myself with PTR for the last year. I developed the software for the ECU and a data visualization system using Grafana. We had a live P&ID diagram and various gauges and line charts to help visualize the status of the rocket. The ECU is an embedded system using a Teensy 4.1 MCU. The ECU has a Ethernet interface and accepts commands over UDP. PlatformIO made it easy to version control and share the embedded software. 
+
+I optimized the networking system to reduce the latency by 3x earlier in the year and alleviated a major concern. I analyzed the round trip times for various combinations of commands with WireShark. The solution was to reduce the number of Round Trips for system updates to allow faster control. This fix also enabled commands to be batched.
+
+I participated in cold flow testing. It was the first time my software touched the hands of real users. This taught me lessons in stability and software evolution. Cold flow testing involved filling our tanks with liquid nitrogen (LN2). We then pressurized the system and let the gases exit from the injector. This simulates the stresses experienced by the system during hot fires.
+
+The cold flows led to a lot of late nights due to issues caused by both avionics and propulsion. These debugging sessions were a bit tense as all other members waited for you to figure out why the system had fallen over. They also conveyed the level of testing required before deploying embedded systems on both the software and hardware side. 
+
+The procedure documents we used are also a source of learning. I seldom had such well-documented instructions. These helped avoid mistakes in both the order of steps and in forgetting steps.
+
+A last-minute swap of our GSE also improved reliability. We had been frustrated by LabView over the year. Critical errors during late rounds of testing drove me to develop some software for our ECU's that enabled them to function as a stop-gap GSE. We found the perils of manually setting the MAC address during a cold flow. We connected both ECU and GSE to the same network which had the same MAC address. This led to a hours of debugging frenzy solved by a single observation. This experience taught me that understanding the entire system is crucial when developing embedded systems.
+
+During all this time, the team demonstrated a lot of humility and sympathy for each other. The cold flows never ended in arguments or people blaming each other for faster their time. This made the whole experience delightful.
+# Thank you, team.
+
+I am grateful to our leads and management for their efforts in making the project successful. Specifically, Nitish Chennoju (Chief Engineer) for helping me grow as an engineer and an effective team member. He made me aware of shortcomings in my approach to engineering. This reality check set me on a path to progress. This has benefited me in several personal projects. It has helped me overcome obstacles that might have made me quit.
 
 ![Full Team Photo](/assets/img/projects/LaunchTeamPicFinal.jpg)
 
-Thank you, to the entire team of UCIRP Liquids for your hardwork and support!
+Thank you, to the entire team of UCIRP Liquids for your awesome attitude and immense support!
 
 #REAPER

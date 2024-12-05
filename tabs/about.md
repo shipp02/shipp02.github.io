@@ -38,7 +38,10 @@ img: ":about.jpg"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-{%- include util/auto-content-generator.liquid -%}
-{{ website_info_text_first }}
+I am a undergraduate student at the University of California, Irvine (UCI) studying Computer Science and Engineering.
+I will complete my degree in March 2025.
 
-{{ website_info_text_second }}
+I am passionate about embedded and autonomus systems and I have been part of the UCI Rocket Project and IEEE@UCI's Micromouse
+project.
+
+I have experience in basic manufacturing skills like 3D Printing and Machining using Lathe's and Mill's.

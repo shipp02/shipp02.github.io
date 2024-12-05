@@ -1,0 +1,30 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: id_Examples
+title: We launched a rocket
+
+# post specific
+# if not specified, .name will be used from _data/owner/[language].yml
+author: Aashay Shah
+category: explore
+# multiple tag entries are possible
+tags: [explore, numerical-methods ]
+# thumbnail image for post
+img: "/assets/img/projects/Engine2.jpg"
+date: 2024-11-28
+# published: false
+
+published: false
+---
+
+# RK4
+Goal is to demonstrate how simulators can be written.
+
+
+- ball falling with air resistance
+- LRC circuit?
+- emf calculation using the pde
+- discretizaiton using finite element method
+# Basic implementation in python using numpy
+
+Obviouly real solvers should be used but this shows the simplicity of writing simple simulators.

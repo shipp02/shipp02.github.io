@@ -4,7 +4,7 @@ layout: about
 lng_pair: id_about
 
 # image for page specific usage
-img: ":about.jpg"
+img: ":me_casual.jpg"
 # publish date (used for seo)
 # if not specified, site.time will be used.
 #date: 2022-03-03 12:32:00 +0000
@@ -38,10 +38,12 @@ img: ":about.jpg"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-I am a undergraduate student at the University of California, Irvine (UCI) studying Computer Science and Engineering.
-I will complete my degree in March 2025.
+I am an undergraduate student at the University of California, Irvine (UCI) studying Computer Science and Engineering. I will complete my degree in **March 2025**.
 
-I am passionate about embedded and autonomus systems and I have been part of the UCI Rocket Project and IEEE@UCI's Micromouse
-project.
+I am passionate about embedded and autonomous systems and I have been part of the **UCI Rocket Project** and IEEE@UCI's **Micromouse** project. As part of these, I have worked with **MCUs** including the Teensy 4.0 and STM32. Further, we used a range of **sensors** including thermocouples, IR sensors, wheel encoders, pressure transducers, and more.
 
-I have experience in basic manufacturing skills like 3D Printing and Machining using Lathe's and Mill's.
+I have taken **courses** in Digital Signal Processing **DSP** covering LTI systems, Bode plots, and FFTs. To **advance myself** in the field of controls, I have studied and implemented *EKFs*, and *PID* controls. This has also given me a robust understanding of multivariate Gaussian distributions.
+
+I am **looking for opportunities** in the Automotive and Robotics fields. I aim to embody a strong engineering culture that focuses on solving problems, not finding fault. Further, I am personable and can admit my mistakes while standing up for what I think is the right idea.
+
+I have basic **manufacturing skills** in 3D printing and machining using lathes and mills.

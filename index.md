@@ -39,7 +39,7 @@ img: ":background.jpg"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-## Computation, Electronics and lessons in humility
+## Computers, Electronics and lessons in humility
 {{ website_info_text_first }}
 
 {{ website_info_text_second }}

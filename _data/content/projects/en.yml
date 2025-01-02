@@ -23,12 +23,85 @@ page_data:
       color: "#2FD0ED"
 
   list:
-    # example
+
     - type: id_example
-      project_name: "UCI Rocket Project Data Visualization System"
+      project_name: Ultrasonic Liquid Level Sensor
+      project_excerpt: Non-intrusively measuring the fill-level of cryogenic tanks using ultrasonic sensors
+      img:
+      img_title:
+      post: |
+        # Requirements
+        - Provide the fill-level of rocket fuel tanks at 10% increments with frequency of 1Hz
+        - Operate non-intrusively to avoid changes in tank design
+
+        # Challenges
+        - Soldering to the ultrasonic transducer we received proved tricky since the pads kept 
+        ripping away.
+        - The requirement to work with existing tank designs limited the choice of sensing technology
+        - Lack of experience with ultrasonic systems within the team
+
+        # Test Procedures
+
+        # Results
+
+        # Future
+
+    - type: id_example
+      project_name: Drone Anti-Collision System
+      project_excerpt: Leveraging RemoteID standard to enable Collision Avoidance in UAVs
+      img: ":drone_daa_demo.png"
+      img_title: "Demonstration of a drone performing collision avoidance"
+      post: |
+        # RemoteID
+
+    - type: id_example
+      project_name: Lox Compiler
+      project_excerpt: Implementation of a Compiler, Bytecode VM and Garbage Collector
+      img: ":clox.png"
+      img_title: "Letter C filled with word CLox"
+      post: |
+        # Longstanding desire
+
+        Since the start of my undergraduate degree, I wished to implement a programming language. My efforts
+        had been thwarted many times.
+    
+    - type: id_example
+      project_name: xv6 Kernel
+      project_excerpt: Implemeting concurrency features and drivers for a Unix-like OS on RISC-V architecture
+      img: ":Xv6_LS.png"
+      img_title: "Understading hardware and operating systems"
+      post: |
+        # Operating systems
+
+        A core area of Computer Science and one of importance to me due to my desire to work in the field of
+        embedded and autonomus systems.
+
+        # Concurrency
+
+        I learnt quite a bit about hardware memory models, atomics and locking. These concepts were tested extensively
+        when I was implementing the concurrent hash maps and linked lists. 
+
+        They were used in a cache for disk blocks. The requirement for the cache was to be have only a single instance
+        of any block in memory. I made some errors in the implementation that caused buffers to be duplicated due to 
+        time of check, time of use error.
+
+        # Drivers and Networking
+
+        I also learnt how ARP works and implemented a simple ARP system.
+
+        This was accompanied by a network driver for an emulated Intel E1000 network card.
+
+        # Debugging and GDB
+
+        Examining raw memory and register states was key to debug some issues that I encountered while implementing syscalls.
+        I learned how to debug complex systems in a bare-metal environment.
+
+
+    - type: id_example
+      project_name: "Data Visualization for UCI Rocket Project"
       project_excerpt: "A grafana based system to analyze sensor data during testing and launch."
-      img: ":project1_thumb.jpg"
-      img_title: "img title1"
+      img: ":grafana_in_action.jpg"
+      img_title: "Grafana in action at the launch"
       # formatting is yyyy/mm/dd
       date: "2023-05-18"
       post: |
@@ -39,6 +112,7 @@ page_data:
         - Python data gathering scripts on Debian
         - Custom grafana Panel Plugins to visualize flight data
 
+        ![Coldflow data visualized](:best_cf.png)
         # Context and Benefits 
 
         This project was started after our python and LabView based systems were found
@@ -89,7 +163,7 @@ page_data:
         database providing window based averaging and other processing in the database so we can avoid 
         visualizing thousands of data points.
 
-        The Telegram system is for a live count of system conditions. It provides a push based feed to 
+        The Telegraf system is for a live count of system conditions. It provides a push based feed to 
         the grafana frontend over websocket. It will also act as the agent the collects information from 
         the engine control systems and feed them to the database.
 
@@ -163,8 +237,8 @@ page_data:
 
     - type: id_example
       project_name: Micro-mouse
-      project_excerpt: IEEE@UCI's entry to the AAMC
       project_excerpt: Built a Micro-mouse robot which was to compete in AAMC
+      img: ":mm.png"
       img_title: "2023-05-28"
       post: |
 
@@ -183,4 +257,4 @@ page_data:
         were quite late in the design process. We failed to account for momentum of our system and how battery
         voltage would affect how much momentum had when we tried to stop. This made the learning curve quite 
         steep overall.
-      
+    

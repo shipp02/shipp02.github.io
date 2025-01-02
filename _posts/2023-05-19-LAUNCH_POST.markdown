@@ -67,6 +67,8 @@ I am grateful to our leads and management for their efforts in making the projec
 
 ![Full Team Photo](/assets/img/projects/LaunchTeamPicFinal.jpg)
 
+[Video of the launch](https://youtu.be/xHpJZvFMLZk?si=-V8nQ_Z_soPC7IaZ)
+
 Thank you, to the entire team of UCIRP Liquids for your awesome attitude and immense support!
 
 #REAPER
